@@ -12,7 +12,18 @@
         <button id="errBtn" type="button">点击错误</button>
         <button id="promiseBtn">promise点击错误</button>
       </div>
-    </div> 
+    </div>
+
+    <img src="some.jpg" alt="" />
+    <script>
+      errBtn.onclick = function () {
+        console.log(window.obj.a);
+      };
+      promiseBtn.onclick = function () {
+        new Promise(function (resolve, reject) {
+          console.log(window.obj.a);
+        });
+      };
     </script>
   </body>
 </html>

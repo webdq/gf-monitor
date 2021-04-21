@@ -1,1 +1,2 @@
-console.log("monitor");
+import { injectJsError } from "./lib/injectJsError";
+injectJsError();
